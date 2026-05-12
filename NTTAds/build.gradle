@@ -31,7 +31,23 @@ android {
 }
 
 dependencies {
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.cardview
     compileOnly 'com.google.android.gms:play-services-ads:24.6.0'
+
+    // Adjust SDK — giữ nguyên theo yêu cầu
+    implementation("com.adjust.sdk:adjust-android:4.38.3")
+    implementation("com.google.android.gms:play-services-analytics:18.0.4")
+
+    // Lifecycle / LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+
+    // Shimmer (dùng trong BannerAds loading)
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
+
+    implementation "com.airbnb.android:lottie:6.6.7"
 }
 
 afterEvaluate {
@@ -41,7 +57,7 @@ afterEvaluate {
                 from components.release
                 groupId    = 'com.truongnt.fsd'
                 artifactId = 'adslibrary'
-                version    = '1.0.0'
+                version    = '1.0.1'
             }
         }
         repositories {

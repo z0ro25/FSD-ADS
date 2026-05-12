@@ -1,0 +1,10 @@
+-keep class com.truongnt.fsd.nttads.admob.AdLibConfig { public *; }
+-keep class com.truongnt.fsd.nttads.admob.ads.InterAds { public *; }
+-keep class com.truongnt.fsd.nttads.admob.ads.BannerAds { public *; }
+-keep class com.truongnt.fsd.nttads.admob.ads.NativeAds { public *; }
+-keep class com.truongnt.fsd.nttads.admob.ads.OpenAds { public *; }
+-keep class com.truongnt.fsd.nttads.admob.ads.RewardAds { public *; }
+-keep class com.truongnt.fsd.nttads.admob.ads.NativeCollapseAds { public *; }
+-keep interface com.yourname.adlib.ads.** { *; }
+-keep class com.adjust.sdk.** { *; }
+-keep class com.google.android.gms.ads.** { *; }
